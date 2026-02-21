@@ -45,23 +45,26 @@ FACTORIAL:DEC R0
 CJNE R0,#01H,PRODUCT
 SJMP THICK
 PRODUCT:MOV B,R0
-MUL AB
+        MUL AB
 ACALL FACTORIAL
 THICK: RET
 THIN:RET
 END
 
 ```
-OUTPUT
 
-(Keil output screenshot can be inserted here)
+## OUTPUT
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/2d623922-5ca3-4e6d-abd8-a160888a39aa" />
+
 
 ---
-MANUAL CALCULATIONS
+## MANUAL CALCULATIONS
+<img width="1280" height="1094" alt="image" src="https://github.com/user-attachments/assets/96e9116f-621c-49b4-913d-238b38f99406" />
 
 ---
 
-RESULT
+## RESULT
 
 Thus, the factorial of a number was calculated and executed successfully using 8051 Keil.
 
